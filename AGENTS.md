@@ -5,13 +5,13 @@
 - Reading files, inspecting code, and discussing designs do not require approval.
 - Ask focused questions when requirements are unclear. Keep communication concise.
 
-## Feature documentation
-- Keep each independent feature under `features/<id>-<short-name>/`.
+## Change documentation
+- Keep each independent change (new feature, bug fix, refactoring, or other work) under `changes/<id>-<short-name>/`.
 - `spec.md` defines the behavior, functional and non-functional requirements, and acceptance criteria.
 - `plan.md` defines the approved technical approach, constraints, and verification strategy.
-- Use `features/_templates/` when starting a new feature.
-- Keep documentation proportional to feature size; a separate `tasks.md` is not required.
-- Do not implement a feature until its specification and plan have been reviewed and approved.
+- Use `changes/_templates/` when starting a new change.
+- Keep documentation proportional to the size of the change; a separate `tasks.md` is not required.
+- Do not implement a change until its specification and plan have been reviewed and approved.
 
 ## Implementation
 - Follow the approved `spec.md` and `plan.md`. If a deviation is needed, stop and ask for approval.

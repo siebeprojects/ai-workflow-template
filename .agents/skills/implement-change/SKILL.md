@@ -1,13 +1,13 @@
 ---
-name: implement-feature
-description: Implement small, approved features incrementally against their specification, technical plan, and QA plan.
+name: implement-change
+description: Implement small, approved changes (features, bug fixes, refactorings) incrementally against their specification, technical plan, and QA plan.
 ---
 
-# Implement a Feature
+# Implement a Change
 
 ## Workflow
 
-1. Read `AGENTS.md` and the feature's `spec.md`, `plan.md`, and `qa.md`.
+1. Read `AGENTS.md` and the change's `spec.md`, `plan.md`, and `qa.md`.
 2. Confirm that the specification, technical plan, and QA plan are approved and that material questions are resolved. If approval is unclear, ask before coding.
 3. Inspect the relevant existing code, identify reusable functionality, and explain the proposed small change. Wait for explicit approval before modifying code.
 4. Implement only the approved scope, following the approved technical approach and the coding principles below.
@@ -36,12 +36,12 @@ description: Implement small, approved features incrementally against their spec
 - Avoid hardcoded assumptions that would obstruct likely future features.
 - Design for reasonable extension without implementing speculative functionality.
 - Keep changes localized and preserve existing behavior unless the approved specification requires otherwise.
-- Do not optimize only for making the current feature work: leave the codebase easy to understand, maintain, and extend for the next feature.
+- Do not optimize only for making the current change work: leave the codebase easy to understand, maintain, and extend for the next change.
 
 ### Continuous code quality
 
 - Refactor within the approved scope when needed to keep the implementation clean.
-- Do not knowingly introduce avoidable technical debt just to complete the feature faster.
+- Do not knowingly introduce avoidable technical debt just to complete the change faster.
 - Keep changes small, reviewable, and independently testable.
 - Avoid unrelated refactoring and new dependencies unless explicitly approved.
 - Prefer clear, testable interfaces and explicit error handling.

@@ -1,4 +1,4 @@
-# <Feature ID>: <Feature title>
+# <Change ID>: <Change title>
 
 **Status:** Draft
 
@@ -7,10 +7,10 @@ As a <user or system role>, I want <capability> so that <outcome>.
 
 ## Scope
 **In scope:**
-- <What this feature includes>
+- <What this change includes>
 
 **Out of scope:**
-- <What this feature intentionally excludes>
+- <What this change intentionally excludes>
 
 ## Functional requirements
 - **FR-001:** <Observable required behavior>
