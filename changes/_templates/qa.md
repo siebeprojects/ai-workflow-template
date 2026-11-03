@@ -1,4 +1,4 @@
-# QA Plan: <Feature ID> — <Feature Name>
+# QA Plan: <Change ID> — <Change Name>
 
 **Status:** Draft  
 **Specification:** [spec.md](spec.md)  
@@ -6,7 +6,7 @@
 
 ## 1. Test Objectives
 
-Describe what must be demonstrated before the feature is considered complete. Focus on observable behavior, regressions, and important failure scenarios.
+Describe what must be demonstrated before the change is considered complete. Focus on observable behavior, regressions, and important failure scenarios.
 
 ## 2. Test Strategy
 

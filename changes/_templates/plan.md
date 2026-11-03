@@ -1,4 +1,4 @@
-# <Feature ID>: Technical Plan
+# <Change ID>: Technical Plan
 
 **Status:** Draft
 **Specification:** [spec.md](./spec.md)

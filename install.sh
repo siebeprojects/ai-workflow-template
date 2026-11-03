@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Install the AI agent workflow starter (AGENTS.md, skills, feature templates)
+# Install the AI agent workflow starter (AGENTS.md, skills, change templates)
 # into another repository.
 #
 # AGENTS.md is the primary, agent-agnostic instruction file. CLAUDE.md only
@@ -23,7 +23,7 @@ usage() {
   cat <<EOF
 Usage: $(basename "$0") [--force] [--dry-run] [--no-exclude] <target-repo>
 
-Copies AGENTS.md, CLAUDE.md, .agents/skills/ and features/_templates/ into
+Copies AGENTS.md, CLAUDE.md, .agents/skills/ and changes/_templates/ into
 <target-repo> and links each skill into .claude/skills/.
 
 When a file already exists and differs, you are asked whether to overwrite
@@ -224,7 +224,7 @@ print_summary() {
 
 # Privately ignore the installed files in the target repository by adding
 # root-anchored patterns to .git/info/exclude (never committed). Exact paths
-# are used so the repo's own .claude/ files and features/<id>-*/ folders
+# are used so the repo's own .claude/ files and changes/<id>-*/ folders
 # stay visible to git. Existing lines are left untouched; no duplicates.
 update_exclude() {
   [ "$EXCLUDE" -eq 1 ] || return 0
@@ -239,7 +239,7 @@ update_exclude() {
     name="$(basename "$skill_dir")"
     patterns="$patterns /.agents/skills/$name/ /.claude/skills/$name"
   done
-  patterns="$patterns /features/_templates/ /.ai-workflow-backup/"
+  patterns="$patterns /changes/_templates/ /.ai-workflow-backup/"
 
   # --git-path also resolves correctly for worktrees and submodules.
   local file
@@ -284,8 +284,8 @@ echo
 # 1. Primary instruction file.
 copy_file "AGENTS.md"
 
-# 2. Canonical skills and feature templates (every regular file in these dirs).
-for dir in .agents/skills features/_templates; do
+# 2. Canonical skills and change templates (every regular file in these dirs).
+for dir in .agents/skills changes/_templates; do
   [ -d "$SRC/$dir" ] || continue
   while IFS= read -r f; do
     copy_file "${f#$SRC/}"
@@ -306,6 +306,6 @@ print_summary
 if [ "$DRY_RUN" -eq 0 ]; then
   echo
   echo "Next steps:"
-  echo "  1. Review the installed files (AGENTS.md, CLAUDE.md, .agents/skills/, features/_templates/)."
-  echo "  2. Start a feature: mkdir features/001-short-name and copy the templates into it."
+  echo "  1. Review the installed files (AGENTS.md, CLAUDE.md, .agents/skills/, changes/_templates/)."
+  echo "  2. Start a change: mkdir changes/001-short-name and copy the templates into it."
 fi
