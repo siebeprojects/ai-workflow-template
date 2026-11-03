@@ -1,4 +1,4 @@
-# Mordoc Engineering Agreement
+# Engineering Agreement
 
 ## Communication and approval
 - Before changing implementation code, explain the proposed changes and wait for explicit approval.

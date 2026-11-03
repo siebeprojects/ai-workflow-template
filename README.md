@@ -1,4 +1,4 @@
-# Mordoc agent development starter
+# AI agent workflow starter
 
 Agent instructions, skills, and change templates for AI-assisted development. This starter contains only documentation; it never installs or overwrites application source code.
 
@@ -13,11 +13,13 @@ Agent instructions, skills, and change templates for AI-assisted development. Th
 
 ## Installing into a repository
 
+Clone this starter anywhere, then run the script from the clone, passing the target repository:
+
 ```bash
-~/dev/github/ai-workflow/install.sh /path/to/repo            # install, ask on conflicts
-~/dev/github/ai-workflow/install.sh --dry-run /path/to/repo  # preview, change nothing
-~/dev/github/ai-workflow/install.sh --force /path/to/repo    # overwrite conflicts without asking
-~/dev/github/ai-workflow/install.sh --no-exclude /path/to/repo  # do not ignore the files (to commit them)
+./install.sh /path/to/repo               # install, ask on conflicts
+./install.sh --dry-run /path/to/repo     # preview, change nothing
+./install.sh --force /path/to/repo       # overwrite conflicts without asking
+./install.sh --no-exclude /path/to/repo  # do not ignore the files (to commit them)
 ```
 
 The script:
