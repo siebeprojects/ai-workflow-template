@@ -13,7 +13,7 @@ description: Implement small, approved changes (features, bug fixes, refactoring
 4. Implement only the approved scope, following the approved technical approach and the coding principles below.
 5. Write or update the relevant automated tests, preferably before implementation when practical. Include normal behavior, error cases, and boundaries identified in `qa.md`.
 6. Run the relevant tests and checks. Do not claim that a test passed unless it was actually executed.
-7. Report changed files, test results, outstanding issues, and any deviations. Update QA execution results when appropriate.
+7. Report changed files, test results, outstanding issues, and any deviations. Update the status of each item in Test Coverage in `qa.md`.
 8. Stop and request approval before changing the approved specification, architecture, or technical approach. Do not commit without permission.
 
 ## Coding Principles
