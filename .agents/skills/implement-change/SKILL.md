@@ -48,7 +48,7 @@ description: Implement small, approved changes (features, bug fixes, refactoring
 
 ### Testing and verification
 
-- Follow the test strategy and test cases in `qa.md`.
+- Follow the test strategy and test coverage in `qa.md`.
 - Prefer testing observable behavior rather than private implementation details.
 - Include failure paths and relevant edge cases.
 - Run relevant regression tests to protect existing functionality.

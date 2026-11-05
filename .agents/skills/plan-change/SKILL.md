@@ -12,5 +12,5 @@ description: Draft and review a small change specification, technical plan, and 
 5. Ask for review and approval of the specification before treating it as final.
 6. Draft `plan.md` describing the smallest viable design, affected components, and constraints.
 7. Ask for review and approval of the plan.
-8. Draft `qa.md` with test cases covering the acceptance criteria and applicable non-functional requirements.
+8. Draft `qa.md` with test coverage for the acceptance criteria and applicable non-functional requirements.
 9. Ask for review and approval of the QA plan. Do not implement code.

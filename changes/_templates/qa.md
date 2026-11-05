@@ -7,12 +7,10 @@
 - <What to test at each level, and what existing behavior must not regress>
 - <Required setup and commands to run>
 
-## Test Cases
-Cover each acceptance criterion and applicable non-functional requirement, including error and boundary scenarios. Do not mark a test as passed unless it was actually executed.
+## Test Coverage
+List how each acceptance criterion and applicable non-functional requirement is verified, including error and boundary scenarios. Link any separate test case document here. Do not mark an item as passed unless it was actually executed.
 
-| ID | Requirements | Scenario | Expected result | Level | Result | Evidence |
-|---|---|---|---|---|---|---|
-| TC-001 | AC-001, FR-001 | <Action or input> | <Observable outcome> | Unit / Integration / End-to-end / Manual | Not run | <Test path or notes> |
+- **AC-001:** <How this is verified, with test path or notes> (Not run / Passed / Failed)
 
 ## Outstanding Issues
 - <Unresolved defects, skipped tests, limitations, or approved deviations; or "None">
