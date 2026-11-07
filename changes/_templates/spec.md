@@ -1,16 +1,16 @@
-# <Change ID>: <Change title>
+# <Change ID>: Specification
 
-## Description
-<What this change does and why, including anything intentionally left out of scope>
+**Proposal:** [proposal.md](./proposal.md)
 
 ## Acceptance Criteria
-- **AC-001:** Given <context>, when <action>, then <expected observable result>.
+- **AC-001:** Given <situation>, when <someone does something>, then <what they see or can do>.
 
 ## Functional Requirements
-- **FR-001:** <Observable required behavior>
+- **FR-001:** <What someone can do or see, in plain language, with no file names, folders, commands or code>
+  - <Optional sub-item, one level only>
 
 ## Non-Functional Requirements
-- **NFR-001:** <Relevant performance, reliability, security, accessibility, or compatibility constraint; remove if not applicable>
+- **NFR-001:** <How well it must work, in plain language: performance, reliability, security, accessibility, or compatibility; remove if not applicable>
 
 ## Risks
 - <Product, delivery, or technical risks, or write "None">

@@ -8,7 +8,7 @@ Agent instructions, skills, and change templates for AI-assisted development. Th
 - `CLAUDE.md`: only imports `AGENTS.md` (`@AGENTS.md`) for Claude Code. Put shared rules in `AGENTS.md`, not here.
 - `.agents/skills/`: canonical reusable skill definitions.
 - `.claude/skills/`: symbolic links exposing those skills to Claude Code.
-- `changes/_templates/`: `spec.md` (requirements), `plan.md` (technical plan), and `qa.md` (verification) templates.
+- `changes/_templates/`: `proposal.md` (the why and what), `spec.md` (requirements), `plan.md` (technical plan), `qa.md` (verification), and `task.md` (one small task for an agent) templates.
 - `install.sh`: installs the above into another repository. `install.sh` and this README stay here and are not copied.
 
 ## Installing into a repository
@@ -36,7 +36,7 @@ Run it again at any time to update a repository to the latest templates.
 
 ## Starting a change
 
-A change can be a new feature, a bug fix, a refactoring, or other work. Create `changes/001-short-name/` and copy the templates into it. Keep `changes/_templates/` unchanged.
+A change can be a new feature, a bug fix, a refactoring, or other work. Create `changes/001-short-name/` and copy the templates into it, with one copy of `task.md` per task in `tasks/`. Keep `changes/_templates/` unchanged.
 
 ## Notes
 

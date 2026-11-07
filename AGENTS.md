@@ -7,15 +7,18 @@
 
 ## Change documentation
 - Keep each independent change (new feature, bug fix, refactoring, or other work) under `changes/<id>-<short-name>/`.
-- `spec.md` defines the behavior, functional and non-functional requirements, and acceptance criteria.
-- `plan.md` defines the approved technical approach and constraints.
+- `proposal.md` gives the user story, why the change is needed, and what we would like to have, in plain language.
+- `spec.md` defines the functional and non-functional requirements and acceptance criteria, in plain language. How it is built goes in `plan.md`.
+- `plan.md` states what must exist to meet each functional requirement, with no explanations or steps, and records the technical decisions.
 - `qa.md` defines how the change is verified and records the results.
+- `tasks/` holds one small file per task, numbered in the order to do them. An agent implements one task at a time, using `spec.md` and `plan.md`.
 - Use `changes/_templates/` when starting a new change.
-- Keep documentation proportional to the size of the change; a separate `tasks.md` is not required.
-- Do not implement a change until its specification, plan, and QA plan have been reviewed and approved.
+- Follow the templates exactly: add no sections or fields, and keep content in the section it belongs to. If something has no place, or the template is wrong, raise it and propose a template change.
+- Keep documentation proportional to the size of the change.
+- Do not implement a change until its proposal, specification, plan, QA plan, and tasks have been reviewed and approved.
 
 ## Implementation
-- Follow the approved `spec.md` and `plan.md`. If a deviation is needed, stop and ask for approval.
+- Follow the approved `proposal.md`, `spec.md` and `plan.md`. If a deviation is needed, stop and ask for approval.
 - Work in small, independently verifiable increments.
 - Follow existing architecture and code conventions; avoid unrelated changes and unnecessary dependencies.
 - Add or update tests for behavioral changes; run relevant tests.
